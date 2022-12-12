@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CityStats_front_end.ParisPage"
+           xmlns:Viewmodel ="clr-namespace:CityStats_front_end.ViewModels"
+             x:DataType="Viewmodel:ParisViewModel"
+             BackgroundImageSource="https://st4.depositphotos.com/23035388/30477/i/450/depositphotos_304770780-stock-photo-abstract-pink-watercolor-background-decorative.jpg">
+
+
+    <VerticalStackLayout>
+        <Label HorizontalOptions="Center" Style="{StaticResource LargeLabelStyle}" Text="Paris"/>
+
+        <Grid Padding="20,5,0,10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions >
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Label Style="{StaticResource MediumLabelStyle}" Text="Date"/>
+            <Label Style="{StaticResource MediumLabelStyle}" Grid.Column="1" Text="Weather"/>
+            <Label Style="{StaticResource MediumLabelStyle}" Grid.Column="2" Text="Max temp"/>
+            <Label Style="{StaticResource MediumLabelStyle}" Grid.Column="3" Text="Min temp"/>
+            <Label Style="{StaticResource MediumLabelStyle}" Grid.Column="4" Text="Sunrise"/>
+            <Label Style="{StaticResource MediumLabelStyle}" Grid.Column="5" Text="Sunset"/>
+            <Label Style="{StaticResource MediumLabelStyle}" Grid.Column="6" Text="Wind Speed"/>
+        </Grid>
+        <BoxView Grid.ColumnSpan="6" HeightRequest="1" BackgroundColor="DarkSlateBlue"/>
+        <Grid Padding="20,5,0,10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <CollectionView Grid.Column="0" ItemsSource="{Binding Time}" >
+                <CollectionView.ItemTemplate>
+
+                    <DataTemplate x:DataType="{x:Type x:String}">
+
+                        <Label Style="{StaticResource SmallLabelStyle}" Text="{Binding .}"/>
+
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+            <CollectionView Grid.Column="1" ItemsSource="{Binding Weathercode}" >
+                <CollectionView.ItemTemplate>
+
+                    <DataTemplate x:DataType="{x:Type x:String}">
+
+                        <Label Style="{StaticResource SmallLabelStyle}" Text="{Binding .}"/>
+
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+            <CollectionView Grid.Column="2" ItemsSource="{Binding Temperature_2m_max}" >
+                <CollectionView.ItemTemplate>
+
+                    <DataTemplate x:DataType="{x:Type x:String}">
+
+                        <Label Style="{StaticResource SmallLabelStyle}" Text="{Binding .}"/>
+
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+            <CollectionView Grid.Column="3" ItemsSource="{Binding Temperature_2m_min}" >
+                <CollectionView.ItemTemplate>
+
+                    <DataTemplate x:DataType="{x:Type x:String}">
+
+                        <Label Style="{StaticResource SmallLabelStyle}" Text="{Binding .}"/>
+
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+            <CollectionView Grid.Column="4" ItemsSource="{Binding Sunrise}" >
+                <CollectionView.ItemTemplate>
+
+                    <DataTemplate x:DataType="{x:Type x:String}">
+
+                        <Label Style="{StaticResource SmallLabelStyle}" Text="{Binding .}"/>
+
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+            <CollectionView Grid.Column="5" ItemsSource="{Binding Sunset}" >
+                <CollectionView.ItemTemplate>
+
+                    <DataTemplate x:DataType="{x:Type x:String}">
+
+                        <Label Style="{StaticResource SmallLabelStyle}" Text="{Binding .}"/>
+
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+            <CollectionView Grid.Column="6" ItemsSource="{Binding Windspeed_10m_max}" >
+                <CollectionView.ItemTemplate>
+
+                    <DataTemplate x:DataType="{x:Type x:String}">
+
+                        <Label Style="{StaticResource SmallLabelStyle}" Text="{Binding .}"/>
+
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </Grid>
+
+    </VerticalStackLayout>
+</ContentPage>
