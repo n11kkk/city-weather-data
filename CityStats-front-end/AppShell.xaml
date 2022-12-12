@@ -10,13 +10,29 @@
     >
 
 
-    <FlyoutItem  >
+    <FlyoutItem Icon="home_icon.png" >
 
         <ShellContent
            
             ContentTemplate="{DataTemplate local:MainPage}"
             Route="MainPage" 
             />
+
+    </FlyoutItem>
+
+
+    <FlyoutItem Icon="paris_icon.png" >
+        <ShellContent
+           
+            ContentTemplate="{DataTemplate local:ParisPage}"/>
+    </FlyoutItem>
+
+    <FlyoutItem Icon="map_icon.png" >
+        <ShellContent 
+            Title="Weather Map"
+            ContentTemplate="{DataTemplate local:WeatherMap}"
+            Route="WeatherMapPage"/>
+    </FlyoutItem>
 
 
 

@@ -14,7 +14,12 @@ public static class MauiProgram
 				fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
 				fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
 			});
-
+		builder.Services.AddSingleton<WichitaViewModel>();
+		builder.Services.AddSingleton<MainPage>();
+		builder.Services.AddSingleton<WeatherMap>();
+		builder.Services.AddSingleton<ParisViewModel>();
+		builder.Services.AddSingleton<ParisPage>();
+		builder.Services.AddSingleton<AppShell>();
 
 		return builder.Build();
 	}

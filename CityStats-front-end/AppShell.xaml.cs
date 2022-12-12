@@ -9,7 +9,29 @@ public partial class AppShell : Shell
 		InitializeComponent();
 	}
 
-  
+    public void OnWichitaTheme()
+    {
+        ICollection<ResourceDictionary> mergedDictionaries = Application.Current.Resources.MergedDictionaries;
+        if (mergedDictionaries != null)
+        {
+            mergedDictionaries.Clear();
+
+            mergedDictionaries.Add(new WichitaTheme());
+
+        }
+    }
+
+    public void OnParisTheme()
+    {
+        ICollection<ResourceDictionary> mergedDictionaries = Application.Current.Resources.MergedDictionaries;
+        if (mergedDictionaries != null)
+        {
+            mergedDictionaries.Clear();
+
+            mergedDictionaries.Add(new ParisTheme());
+
+        }
+    }
 
 
 
