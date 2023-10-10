@@ -17,12 +17,5 @@ Fig[7-8] The weather data of paris. Another theme.
 Fig[9-10] The world weather map page.        
 ![image](https://user-images.githubusercontent.com/115042113/206962604-af154b74-9d8d-493f-be87-51be57252d70.png)
 ![image](https://user-images.githubusercontent.com/115042113/206962615-149d6b9a-64d0-4fd6-b7eb-c1184b2d90c9.png)             
-
-     
-    
-Nikilesh's Contribution : Built the model in the API and also wrote the complete functionality in the API. Also worked on the front end of the project and the themes in the front-end. Also worked on the World map page.         
-          
-Kartheek's Contribution: Worked on the model and the viewmodel of the city in the front-end. Also worked on the view page of the city.    
-    
-Mounica's Contribution : Worked on the viewmodel of the the city paris. Also constructed the view page of the city.    
+ 
     
