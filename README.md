@@ -1,5 +1,4 @@
 # city-weather-data
-
 github repo of the API:      
 https://github.com/n11kkk/city-weather-data      
 
