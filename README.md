@@ -1,12 +1,8 @@
 # city-weather-data
 
-Group Member's Details:    
-1.Nikilesh Samba Murthy - G856U646  
-2.Kartheek Meda - U759A296  
-3.Mounica Bobba - G557C728     
 github repo of the API:      
 https://github.com/n11kkk/city-weather-data      
-Link to the video:     https://www.youtube.com/watch?v=hmzWKru7SRk&ab_channel=KartheekMeda             
+
 Fig[1-3] Below are screenshots of the SCHEMAS in the Backend          
 ![image](https://user-images.githubusercontent.com/115042113/206962465-a4eeb4a8-55b6-40a4-b97a-06db562aec75.png)
 ![image](https://user-images.githubusercontent.com/115042113/206962475-9c65c0c0-3c59-48f2-87b5-daa73c622243.png)
